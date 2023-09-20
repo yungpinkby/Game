@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mobile Legends BANG BANG</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <button id="loginBtn" class="button red">
+        <i class="fa fa-unlock"></i>
+        <span>Вход</span>
+    </button> 
+      <div class="center">
+        <form id="loginForm">
+          <span id="closeButton" class="close">&times;</span>
+          <div class="title">Login</div>
+          <span class="inputs">
+            <span class="inputf">
+              <input type="username" class="input" placeholder="Username" />
+              <span class="label">Username</span>
+            </span>
+            <span class="inputf">
+              <input type="password" class="input" placeholder="Password" />
+              <span class="label">Password</span>
+            </span>
+          </span>
+          <div class="links">
+            <a href="#">Forgot Password</a>
+            <label for="remember">
+              <input type="checkbox" id="remember" />
+              Remember Me
+            </label>
+          </div>
+          <button type="button" class="btn">
+            <span>Login</span>
+            <div class="dots">
+              <div class="dot" style="--delay: 0s"></div>
+              <div class="dot" style="--delay: 0.25s"></div>
+              <div class="dot" style="--delay: 0.5s"></div>
+            </div>
+          </button>
+          <div class="text">
+            New user? Create an account
+            <button onclick="showRegistration()">Register</button>
+              <div id="registrationWindow" style="display: none;">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="change-photos">
+        <div class="change-photo">
+          <img src="https://ww1.freelogovectors.net/svg11/mobilelegendslogo-freelogovectors.net.svg" alt="ML black" width="800" height="20px">
+        </div>
+        <div class="change-photo">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/72/New_Mobile_Legends_Bang_Bang_2020_Logo.png?20220102000303" alt="ML gold" width="800" height="20px">
+        </div>
+      </div>
+  </body>
+</html>

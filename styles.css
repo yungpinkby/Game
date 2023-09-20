@@ -1,0 +1,321 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+.button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Roboto, Verdana, Tahoma, sans;
+  padding: 12px 16px;
+  border-radius: 100px;
+  color: #fff;
+  float: right;
+}
+.button i {
+  margin-right: 4px;
+}
+.button + .button {
+  margin-left: 6px;
+}
+.button.red {
+  background: #50040e;
+}
+
+.button:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button:hover.red {
+  background: #290105;
+}
+
+.button:active.red {
+  background: #30012c;
+}
+
+div {
+  margin: 24px;
+  text-align: left;
+  margin-right: auto;
+}
+
+body {
+    background-image: url(https://a-static.besthdwallpaper.com/spider-lily-karina-mobile-legends-ml-wallpaper-2000x1333-67540_39.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.change-photos {
+    float: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+  .change-photos .change-photo img {
+    width: 100%;
+    height: auto; 
+}
+  
+
+  .change-photos .change-photo:nth-of-type(2) {
+    display: none;
+}
+  
+  .change-photos:hover .change-photo:nth-of-type(1) {
+    display: none;
+}
+  
+  .change-photos:hover .change-photo:nth-of-type(2) {
+    display: block;
+}
+  
+  .change-photos:hover {
+    cursor: pointer;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/login-back.png);
+  background-size: cover;
+}
+
+form {
+  display: none;
+  width: 400px;
+  height: 470px;
+  box-sizing: border-box;
+  border-radius: 5mm;
+  padding: 40px 30px;
+  backdrop-filter: blur(6px);
+  border: 0.5mm solid rgba(0, 0, 0, 0.65);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  margin-left: 7px;
+  width: 100%;
+  font-family: poppins;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.inputs {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputf {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 15px 0;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 0.55mm solid rgb(255, 255, 255);
+  background: none;
+  padding: 0 15px;
+  font-family: poppins;
+  font-size: 15px;
+  color: white;
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgb(241, 232, 232);
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: poppins;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.25s ease-out;
+}
+
+.input:focus + .label {
+  top: -20px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+.input:not(:placeholder-shown) + .label {
+  top: -20px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.icon {
+  color: white;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 18px;
+}
+
+.links {
+  margin-left: 7px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: poppins;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.links label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  font-weight: 600;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 6mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.btn span {
+  color: rgb(40, 40, 40);
+  font-family: poppins;
+  font-size: 16px;
+}
+
+.text {
+  margin-left: 7px;
+  width: 100%;
+  font-family: poppins;
+  font-size: 13px;
+  text-align: center;
+  color: rgb(240, 240, 240);
+}
+
+.text a {
+  color: white;
+  font-weight: 600;
+}
+
+.dots {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 1px;
+  animation: load 0.5s ease-out infinite alternate var(--delay);
+}
+
+@keyframes load {
+  0% {
+    background: rgb(0, 0, 0);
+  }
+  50%,
+  100% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn .dots {
+  display: none;
+}
+
+.btn span {
+  display: block;
+}
+
+.btn.active .dots {
+  display: flex;
+}
+
+.btn.active span {
+  display: none;
+}
+
+.input.active {
+  animation: shake 0.25s ease-in-out 3;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0px;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
