@@ -19,6 +19,6 @@ closeButton.addEventListener("click", function() {
 });
 
 function showRegistration() {
-  var registrationWindow = document.getElementById("registrationWindow");
+  let registrationWindow = document.getElementById("registrationWindow");
   registrationWindow.style.display = "block";
 }
